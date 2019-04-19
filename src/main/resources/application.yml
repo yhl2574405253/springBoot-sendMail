@@ -1,0 +1,26 @@
+#服务的端口
+server:
+  port: 8091
+
+spring:
+  mail:
+#   smtp服务器的地址
+    host: smtp.163.com
+#   邮箱用户名
+    username: YHL2574405253@163.com
+#    邮箱密码
+    password: yhl123456789
+#   邮箱的端口
+    port: 25
+#   邮箱的协议
+    protocol: smtp
+  application:
+#   服务的名称
+    name: mail-center
+
+
+eureka:
+  client:
+    service-url:
+#     配置注册中心的地址
+      defaultZone: http://10.0.1.65:8081/eureka/
